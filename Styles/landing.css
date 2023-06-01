@@ -1,0 +1,83 @@
+.hero {
+    position: relative;
+    top: 78px;
+    padding-left: 10%;
+    height: 80vh;
+    background-image: url("../Assets/HeroBackground.png");
+    background-size: 120%;
+    background-position: 25% 60%;
+    background-repeat: no-repeat;
+}
+
+.hero .text {
+    position: relative;
+    top: 40%;
+    transform: translateY(-40%);
+}
+
+.hero .text h4 {
+    display: inline;
+}
+
+.hero .text p {
+    margin-top: 16px;
+    width: 512px;
+}
+
+.typed-cursor {
+    color: var(--primary--dark);
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.hero .socials a::after {
+    all: unset;
+    display: block;
+}
+
+.hero .socials img {
+    width: 36px;
+}
+
+.hero .socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    position: absolute;
+    right: 24px;
+    top: 35%;
+}
+
+/* Featured Project */
+
+.featured {
+    display: flex;
+    align-items: flex-end;
+    gap: 48px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 64px;
+}
+
+.featured .img {
+    width: 636px;
+    height: 356px;
+    background-image: url("../Assets/MyceliaCard.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    filter: drop-shadow(0px 10px 16px rgba(0, 0, 0, 0.7));
+}
+
+.featured .info {
+    margin-bottom: 26px;
+}
+
+.featured .info p {
+    margin-top: 12px;
+}
+
+.featured .info a {
+    margin-top: 18px;
+}
