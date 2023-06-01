@@ -11,5 +11,5 @@
 </clipPath>
 </defs>
 </svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
-@media (prefers-color-scheme: dark) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: contrast(0.425531914893617) brightness(4); } }
 </style></svg>
