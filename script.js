@@ -4,6 +4,9 @@ var titleInterval = 2800;
 var currentTitleIndex = 0;
 
 const navbar = document.querySelector(".navbar"); 
+const burger = document.querySelector('.burger');
+const navLinksWrapper = document.querySelector('.navbar ul');
+const navLinks = document.querySelectorAll('.navbar ul li');
 
 changeTitle();
 setInterval(changeTitle, titleInterval);
@@ -32,4 +35,22 @@ function changeTitle() {
 
 function lerp (start, end, amt){
     return (1-amt)*start+amt*end
+}
+
+
+function navSlide() {
+    //Toggle nav
+    navLinksWrapper.classList.toggle('nav-active');
+    navbar.classList.toggle('nav-active');
+
+    //Animate links
+    navLinks.forEach((link, index) => {
+        if (link.style.animation) {
+            link.style.animation = '';
+        } else {
+            link.style.animation = 'navLinkFade 0.5s ease forwards ' + (index / 10 + 0.15) + 's';
+        }
+    });
+
+    burger.classList.toggle('burger-toggle');
 }

@@ -81,3 +81,46 @@
 .featured .info a {
     margin-top: 18px;
 }
+
+
+@media only screen and (max-width: 889px) {
+
+    .hero {
+        top: calc(78px + 128px);
+        background: none;
+        padding-left: 0;
+        height: unset;
+        margin-bottom: 164px;
+    }
+
+    .hero .socials {
+        display: none;
+    }
+
+    .hero .text {
+        width: 80%;
+        margin: auto;
+        top: 25%;
+        transform: translateY(-25%);
+    }
+
+    .hero .text p {
+        width: 100%;
+    }
+
+    .hero .text h4 {
+        font-size: 28px;
+    }
+
+    .featured {
+        background-color: aqua;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .featured .img {
+        width: 100%;
+        height: 40vh;
+    }
+
+}
