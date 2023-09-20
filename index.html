@@ -21,7 +21,8 @@
 
     <link rel="stylesheet" href="Styles/main.css">
     <link rel="stylesheet" href="Styles/landing.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=League+Spartan:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <link rel="icon" type="image/svg+xml" href="/Assets/favicon.svg">
     <link rel="icon" type="image/png" href="/Assets/favicon.png">
@@ -30,56 +31,53 @@
 </head>
 <body>
     <nav class="navbar">
-        <a href=""><img class="logo" src="Assets/Logo.svg" alt="JW Logo"></a>
-        <ul>
+        <a href="/"><img class="logo" src="Assets/Logo.svg" alt="JW Logo"></a>
+        <ul class="nav-links">
+            <li><a href="">Home</a></li>
             <li><a href="">Portfolio</a></li>
             <li><a href="">About</a></li>
             <li><a href="">Contact</a></li>
         </ul>
-        <div class="burger toggle-burger" onclick="navSlide()">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
+        <ul class="nav-buttons">
+            <a href="https://www.linkedin.com/in/jacob-wigent/" target="_blank"><img src="Assets/Icons/Dark-LinkedIn.svg" alt="LinkedIn Logo"></a>
+            <a href="https://github.com/jacob-wigent" target="_blank"><img src="Assets/Icons/Dark-Github.svg" alt="GitHub Logo"></a>
+            <div class="hamburger"><div></div><div></div><div></div></div>
+        </ul>
     </nav>
     <section class="hero">
-        <div class="text">
-            <h4 class="multi-text">Game Designer</h4>
-            <h1>Jacob Wigent</h1>
-            <p>Developer with 4+ years of experience in C# programming and web development. Arduino and electronics hobbyist, leveraging a blend of software and hardware to build interactive projects.</p>
+        <img class="circle" src="Assets/HeroBackgroundCircle.svg">
+        <img class="portrait" src="Assets/HeroPortrait.png" alt="Jacob Wigent Portrait">
+        <div class="left">
+            <div class="text">
+                <h3>Aspiring Technologist</h3>
+                <p>Junior at the North Carolina School of Science and Mathematics, dedicated to the integration of electrical engineering and computer science. Always eager to learn and explore topics in computer science, physics, and engineering.</p>    
+                <a href="">About Me <span class="material-symbols-outlined">arrow_forward</span></a>
+                <div class="social-buttons">
+                    <a href="https://www.linkedin.com/in/jacob-wigent/" target="_blank"><div class="social-button">
+                        <img src="Assets/Icons/LinkedIn.svg" alt="LinkedIn Logo">
+                    </div></a>
+                    <a href="https://github.com/jacob-wigent" target="_blank"><div class="social-button">
+                        <img src="Assets/Icons/Github.svg" alt="LinkedIn Logo">
+                    </div></a>
+                    <a href="https://www.youtube.com/channel/UCAYNmNpyCUFQOGz35It_Wzg" target="_blank"><div class="social-button">
+                        <img src="Assets/Icons/YouTube.svg" alt="LinkedIn Logo">
+                    </div></a>
+                </div>
+            </div>
         </div>
-        <div class="socials">
-            <a href="https://twitter.com/Jacob_Wigent_" target="_blank"><img src="Assets/Icons/Twitter.svg" alt="Twitter Logo"></a>
-            <a href="https://www.linkedin.com/in/jacob-wigent-9984b0246/" target="_blank"><img src="Assets/Icons/LinkedIn.svg" alt="LinkedIn Logo"></a>
-            <a href="https://github.com/jacob-wigent" target="_blank"><img src="Assets/Icons/Github.svg" alt="GitHub Logo"></a>
-            <a href="https://www.youtube.com/channel/UCAYNmNpyCUFQOGz35It_Wzg" target="_blank"><img src="Assets/Icons/YouTube.svg" alt="YouTube Logo"></a>
+        <div class="right">
+            <div class="text">
+                <!-- <h4 class="multi-text">Game Designer</h4> -->
+                <h4>Game Designer</h4>
+                <h1>Jacob Wigent</h1>
+                <hr>
+                <p>Developer with 4+ years of experience in C# programming and web development. Arduino and electronics hobbyist, leveraging a blend of software and hardware to build interactive projects.</p>    
+            </div>
         </div>
     </section>
-    <div class="featured">
-        <div class="img"></div>
-        <div class="info">
-            <h3>Current Project</h3>
-            <h5>Mycelia | 2023-Present</h5>
-            <p>A small farming game set on the island of Mycelia. Explore the island and uncover the secrets of agriculture.</p>
-            <a href="https://www.youtube.com/watch?v=7WZKo1yVz9Q&t=98s" target="_blank">View Project</a>
-        </div>
-    </div>
-    <footer>
-        <ul>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-        <div class="socials">
-            <a href="https://twitter.com/Jacob_Wigent_" target="_blank"><img src="Assets/Icons/TwitterLight.svg" alt="Twitter Logo"></a>
-            <a href="https://www.linkedin.com/in/jacob-wigent-9984b0246/" target="_blank"><img src="Assets/Icons/LinkedInLight.svg" alt="LinkedIn Logo"></a>
-            <a href="https://github.com/jacob-wigent" target="_blank"><img src="Assets/Icons/GithubLight.svg" alt="GitHub Logo"></a>
-            <a href="https://www.youtube.com/channel/UCAYNmNpyCUFQOGz35It_Wzg" target="_blank"><img src="Assets/Icons/YouTubeLight.svg" alt="YouTube Logo"></a>
-        </div>
-        <hr>
-        <p>©2023 Jacob Wigent,  All Rights Reserved.</p>
-    </footer>
+    <div class="bar">
 
+    </div>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="script.js"></script>
 </body>
