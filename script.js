@@ -40,3 +40,4 @@ function navSlide() {
 
     burger.classList.toggle('burger-toggle');
 }
+  

@@ -5,13 +5,13 @@ section.hero {
     height: calc(100vh - 86px);
     width: 80%;
     margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
 }
 
 .hero .portrait {
     position: absolute;
-    height: 480px;
+    height: 80%;
     transform: translateX(-50%);
     left: 50%;
     bottom: 0%;
@@ -19,9 +19,11 @@ section.hero {
 
 .hero .circle {
     position: absolute;
-    width: 40%;
+    height: 80%;
     transform: translateX(-49%);
     left: 49%;
+    top: 14%;
+    min-width: 500px;
 }
 
 .hero .left .text {
@@ -34,8 +36,8 @@ section.hero {
     max-width: 300px;
 }
 
-.hero .left .text a {
-    display: block;
+.hero .left .text a.cta-link {
+    display: inline-block;
     margin-top: 8px;
     font-weight: 400;
     color: var(--primary--accent);
@@ -61,6 +63,12 @@ section.hero {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: scale 0.1s ease-in-out;
+}
+
+
+.hero .left .text .social-button:hover {
+    scale: 1.05;
 }
 
 .social-button img {
@@ -71,6 +79,7 @@ section.hero {
     text-align: right;
     display: flex;
     justify-content: flex-end;
+    max-width: 500px;
 }
 
 .hero .right .text {
@@ -98,7 +107,7 @@ section.hero {
 .bar {
     z-index: 100;
     width: 60%;
-    height: 100px;
+    height: 128px;
     border-radius: 28px;
     background-color: var(--light);
     box-shadow: 0px 6px 13px 4px rgba(0, 0, 0, 0.30);
@@ -108,4 +117,161 @@ section.hero {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 26px;
+    padding: 0 26px;
 }
+
+.bar .badge {
+    height: 75%;
+    background-color: rgba(29, 111, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.bar .badge:hover {
+    background-color: rgba(29, 111, 0, 0.25);
+}
+
+.bar .badge img {
+    width: 70%;
+    transition: scale 0.2s ease-in-out;
+}
+
+.bar .badge:hover img {
+    scale: 1.02;
+}
+
+
+section.specialties {
+    padding-top: 100px;
+    width: 80%;
+    margin: auto;
+}
+
+.specialties .title {
+    width: 560px;
+    margin: auto;
+    text-align: center;
+}
+
+.specialties .title p {
+    padding-top: 12px;
+    width: 360px;
+    margin: auto;
+}
+
+.specialties .items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1246px;
+    margin: 86px auto 46px auto;
+}
+
+.specialties .items .specialty {
+    min-width: 274px;
+    max-width: 428px;
+    flex: 1;
+    padding: 0 48px;
+    margin-bottom: 64px;
+}
+
+.specialties .items .specialty h3 {
+    font-size: 24px;
+    width: 68px;
+    margin-bottom: 8px;
+}
+
+.specialties .items .specialty img {
+    width: 56px;
+    margin-bottom: 16px;
+}
+
+.specialties .items .specialty a.cta-link {
+    color: var(--primary--accent);
+    margin-top: 12px;
+    display: inline-block;
+}
+
+/*    SKILLS     */
+
+div.skills-box {
+    width: 82%;
+    background-color: var(--light);
+    margin: auto;
+    padding: 72px 64px;
+    box-shadow: 0px 6px 13px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 32px;
+}
+
+div.skills-box hr {
+    width: 64px;
+    border-color: var(--primary--accent);
+    border-width: 3px;
+    border-style: solid;
+    margin-top: 24px;
+    margin-bottom: 36px;
+}
+
+div.skills-box p {
+    margin-top: 24px;
+}
+
+.skills-list {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 956px;
+}
+
+.skill {
+    position: relative;
+    height: 112px;
+    width: 112px;
+    border-radius: 50%;
+    background: conic-gradient(var(--secondary--accent) var(--degrees), #AEB5AB 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 18px
+}
+
+.skill::before {
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: var(--light);
+}
+
+.skill img {
+    z-index: 10;
+    width: 50%;
+}
+
+.skill .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    opacity: 0;
+    background-color: var(--light);
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    z-index: 11;
+    border-radius: 50%;
+    transition: opacity 0.15s ease-in-out;
+}
+
+.skill:hover .info {
+    opacity: 0.85;
+}
+  
