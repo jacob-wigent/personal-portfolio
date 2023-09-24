@@ -8,6 +8,8 @@ const burger = document.querySelector('.burger');
 const navLinksWrapper = document.querySelector('.navbar ul');
 const navLinks = document.querySelectorAll('.navbar ul li');
 
+const educationItems = document.querySelectorAll('.education-item');
+
 changeTitle();
 setInterval(changeTitle, titleInterval);
 
@@ -39,5 +41,13 @@ function navSlide() {
     });
 
     burger.classList.toggle('burger-toggle');
+}
+
+function selectEducation(index) {
+    educationItems.forEach(element => {
+        element.classList.remove('selected');
+    });
+
+    educationItems[index].classList.toggle('selected');
 }
   

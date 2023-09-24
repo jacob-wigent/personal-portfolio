@@ -160,7 +160,7 @@ section.specialties {
 }
 
 .specialties .title p {
-    padding-top: 12px;
+    padding-top: 22px;
     width: 360px;
     margin: auto;
 }
@@ -207,6 +207,7 @@ div.skills-box {
     padding: 72px 64px;
     box-shadow: 0px 6px 13px 4px rgba(0, 0, 0, 0.25);
     border-radius: 32px;
+    max-width: 1246px;
 }
 
 div.skills-box hr {
@@ -220,6 +221,7 @@ div.skills-box hr {
 
 div.skills-box p {
     margin-top: 24px;
+    font-size: 1.2rem;
 }
 
 .skills-list {
@@ -240,7 +242,13 @@ div.skills-box p {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-bottom: 18px
+    margin-bottom: 18px;
+}
+
+.skill-filler {
+    height: 112px;
+    width: 112px;
+    margin-bottom: 18px;
 }
 
 .skill::before {
@@ -274,4 +282,83 @@ div.skills-box p {
 .skill:hover .info {
     opacity: 0.85;
 }
-  
+
+
+section.education {
+    padding-top: 100px;
+    width: 80%;
+    margin: auto;
+}
+
+.education .title {
+    width: 560px;
+    margin: auto;
+    text-align: center;
+}
+
+.education .title p {
+    padding-top: 22px;
+    width: 446px;
+    margin: auto;
+}
+
+.education .timeline-container {
+    width: 90%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+}
+
+.education .timeline-container .education-item {
+    text-align: right;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100px;
+    justify-content: center;
+}
+
+.education .timeline-container .education-item p.heading {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.education .timeline-container .education-item img.icon {
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    transition: scale 0.2s ease-in-out;
+}
+
+.education .timeline-container .education-item img.icon:hover {
+    scale: 1.05;
+}
+
+.education .timeline-container .education-item img.point-line {
+    height: 64px;
+    position: relative;
+    top: 100px;
+    right: 44px;
+}
+
+.education .timeline-container .education-item .details {
+    display: none;
+    margin-right: 16px;
+    max-width: 428px;
+    cursor: pointer;
+}
+
+.education .timeline-container .education-item.selected .details {
+    display: block;
+}
+
+.timeline {
+    width: 85%;
+    display: block;
+    margin: auto;
+    position: relative;
+    bottom: 48px;
+}
