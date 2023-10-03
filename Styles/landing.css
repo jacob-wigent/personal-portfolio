@@ -1,6 +1,16 @@
 
 /*   Hero   */
 
+.hero h4.multi-text {
+    display: inline;
+}
+
+.typed-cursor {
+    color: var(--primary--dark);
+    font-size: 1.8rem;
+    font-weight: 200;
+}
+
 section.hero {
     height: calc(100vh - 86px);
     width: 80%;
