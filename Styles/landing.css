@@ -372,3 +372,184 @@ section.education {
     position: relative;
     bottom: 48px;
 }
+
+
+@media only screen and (max-width: 889px) {
+
+
+    h1 {
+        font-size: 64px;
+    }
+
+    section.hero {
+        display: flex;
+        flex-direction: column-reverse;
+        height: inherit;
+        z-index: 10;
+    }
+
+    .hero .portrait {
+        position: static;
+        width: 100%;
+        transform: unset;
+        margin: auto;
+    }
+
+    .hero .left {
+        position: static;
+        margin-bottom: 58px;
+        width: 100%;
+    }
+
+    .hero .left .text {
+        position: static;
+        text-align: left;
+        width: 100%;
+    }
+    
+    .hero .circle {
+        display: none;
+    }
+    
+    .hero .left .text p {
+        max-width: 94%;
+    }
+    
+    .hero .left .text h3 {
+        max-width: 180px;
+        margin-bottom: 8px;
+    }
+    
+    .social-buttons {
+        margin-top: 48px;
+    }
+
+    .hero .right {
+        display: block;
+        max-width: initial;
+        text-align: left;
+        margin-top: 46px;
+        margin-bottom: 48px;
+    }
+    
+    .hero .right .text {
+        position: static;
+        width: 96%;
+    }
+    
+    .hero .right .text p {
+        max-width: inherit;
+        float: left;
+    }
+    
+    .hero .right .text hr {
+        float: inherit;
+    }
+    
+    .bar {
+        z-index: 100;
+        width: 90%;
+        height: inherit;
+        gap: 26px;
+        padding: 26px 26px;
+        flex-direction: column;
+    }
+    
+    .bar .badge {
+        height: 64px;
+        flex: inherit;
+        padding: 12px 24px;
+    }
+
+
+    .specialties .title {
+        width: 100%;
+    }
+
+    .specialties .title p {
+        width: 90%;
+    }
+
+    
+    .skills-box h2 {
+        text-align: center;
+    }
+
+    .skills-box p {
+        text-align: center;
+        margin-bottom: 18px;
+    }
+
+    .skills-box hr {
+        margin: auto;
+    }
+
+    .skills-list {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        gap: 26px;
+    }
+
+    .skill-filler {
+        display: none;
+    }
+
+
+    .education .title {
+        width: 100%;
+        margin: auto;
+    }
+
+    .education .title p {
+        width: 90%;
+        margin: auto;
+    }
+
+    .education .timeline-container {
+        flex-direction: column;
+        gap: 60px;
+        padding: 0;
+        align-items: flex-start;
+    }
+    .education .timeline-container .education-item {
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        height: inherit;
+        position: static;
+        margin: auto;
+    }
+
+    .education-item img {
+        margin-right: 20px;
+    }
+
+    
+    .education .timeline-container .education-item img.point-line {
+        display: none;
+    }
+    
+    .education .timeline-container .education-item .details {
+        display: none;
+        margin-right: 16px;
+        max-width: 428px;
+        cursor: pointer;
+    }
+    
+    .education .timeline-container .education-item.selected .details {
+        display: block;
+    }
+    
+    .timeline {
+        display: none;
+    }
+
+    .education .timeline-container .education-item .details {
+        display: block;
+    }
+
+
+
+}
