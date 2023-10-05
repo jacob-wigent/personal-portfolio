@@ -4,9 +4,13 @@ var titleInterval = 2800;
 var currentTitleIndex = 0;
 
 const navbar = document.querySelector(".navbar"); 
-const burger = document.querySelector('.burger');
+const burger = document.querySelector('.hamburger.menu');
 const navLinksWrapper = document.querySelector('.navbar ul');
 const navLinks = document.querySelectorAll('.navbar ul li');
+
+const socialBar = document.querySelector('.socials-bar');
+const socialBurger = document.querySelector('.hamburger.socials');
+const socialButtons = document.querySelectorAll('.socials-bar a');
 
 const educationItems = document.querySelectorAll('.education-item');
 
@@ -41,6 +45,22 @@ function navSlide() {
     });
 
     burger.classList.toggle('burger-toggle');
+}
+
+function socialOpen() {
+    //Toggle nav
+    socialBar.classList.toggle('social-active');
+
+    //Animate links
+    socialButtons.forEach((button, index) => {
+        if (button.style.animation) {
+            button.style.animation = '';
+        } else {
+            button.style.animation = 'socialButtonsOpen 0.5s ease forwards ' + (index / 10 + 0.15) + 's';
+        }
+    });
+
+    socialBurger.classList.toggle('burger-toggle');
 }
 
 function selectEducation(index) {

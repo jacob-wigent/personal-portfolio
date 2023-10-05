@@ -177,11 +177,13 @@ nav .nav-buttons {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    display: none;
 }
 
 .hamburger div {
     background-color: var(--primary--dark);
     height: 3px;
+    transition: transform 0.3s ease;
 }
 
 .hamburger div:nth-child(1) {
@@ -196,6 +198,62 @@ nav .nav-buttons {
     width: 90%;
 }
 
+.hamburger.socials {
+    display: flex;
+}
+
+.socials-bar {
+    background-color: var(--primary--dark);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: absolute;
+    right: calc(5% - 10px);
+    top: 24px;
+    z-index: 10;
+    padding: 10px;
+    border-radius: 0 5px 5px 5px;
+    transition: transform 0.2s ease-in;
+    transform: translateX(-100px);
+    display: none;
+}
+
+.socials-bar img {
+    width: 32px;
+}
+
+.socials-bar.social-active {
+    display: flex;
+    transform: translateX(0px);
+}
+
+.hamburger.socials.burger-toggle div:nth-child(1)
+{
+    transform: rotate(-45deg) translate(-4.5px, 9.5px);
+    width: 100%;
+}
+
+.hamburger.socials.burger-toggle div:nth-child(2)
+{
+    opacity: 0;
+}
+
+.hamburger.socials.burger-toggle div:nth-child(3)
+{
+    width: 100%;
+    transform: rotate(45deg) translate(-4.5px, -9.5px);
+}
+
+@keyframes socialButtonsOpen {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+  }
 
 /* Footer */
 
@@ -276,8 +334,13 @@ footer #copyright {
     }
 
     .hamburger {
+        display: flex;
         align-items: flex-end;
         z-index: 1000;
+    }
+
+    .hamburger.socials {
+        display: none;
     }
 
     .nav-buttons > a {
