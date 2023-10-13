@@ -2,6 +2,8 @@
     --light: rgba(252, 252, 252, 1);
     --primary--dark: rgba(32, 54, 49, 1);
     --secondary--accent: rgba(59, 117, 85, 1);
+    --secondary--accent--lighter: rgb(78, 141, 107);
+    --secondary--accent--darker: rgb(43, 95, 75);
     --primary--accent: rgba(219, 96, 71, 1);
     --primary--accent--lighter: rgb(236, 109, 84);
     --primary--accent--darker: rgb(201, 80, 58);
