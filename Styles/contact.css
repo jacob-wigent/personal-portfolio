@@ -1,0 +1,160 @@
+main hr {
+    width: 100px;
+    border-color: var(--primary--accent);
+    border-width: 3px;
+    border-style: solid;
+    margin-top: 24px;
+    margin-bottom: 36px;
+}
+
+.background-circle {
+    position: absolute;
+    height: 74vh;
+    top: 60%;
+    transform: translate(-40%, -60%);
+}
+
+main {
+    width: 65%;
+    margin: auto;
+}
+
+main .container {
+    height: calc(100vh - 86px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container > * {
+    flex: 1;
+    max-width: 500px;
+}
+
+.email {
+    margin: 40px 0 20px 20px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.email .text a {
+    font-weight: 700;
+    color: var(--secondary--accent);
+}
+
+.email .circle {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background-color: rgba(29, 111, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email .circle img {
+    width: 38px;
+}
+
+.container .info h1 {
+    max-width: 500px;
+}
+
+form input, form textarea {
+    background-color: rgba(29, 111, 0, 0.1);
+    padding: 8px 16px 8px 12px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    color: rgba(29, 111, 0, 0.8);
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 18px;
+}
+
+form input:focus, form textarea:focus {
+    outline: none !important;
+    /* border: 3px solid var(--secondary--accent); */
+    box-shadow: 0 0 0 2px var(--secondary--accent) inset;
+}
+
+#submit:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 2px var(--secondary--accent) inset;
+    background-color: var(--light);
+    color: var(--primary--dark);
+}
+
+form textarea {
+    height: 86px;
+}
+
+#submit {
+    background-color: var(--secondary--accent);
+    color: var(--light);
+    font-weight: 400;
+    padding: 14px 0;
+    width: 40%;
+    filter: drop-shadow(0px 8px 6px rgba(0, 0, 0, 0.3));
+    transition: background-color 200ms ease-in-out;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: var(--secondary--accent--darker);
+}
+
+#submit:active {
+    cursor: pointer;
+    background-color: var(--secondary--accent--lighter);
+}
+
+.form h3 {
+    font-size: 32px;
+    margin-bottom: 26px;
+}
+
+form p#confirmation {
+    color: var(--secondary--accent);
+    margin-left: 12px;
+    display: none;
+}
+
+form p#confirmation.active {
+    display: inline-block;
+}
+
+#submit:disabled {
+    background-color: rgba(59, 117, 85, 0.4);
+    cursor: inherit;
+}
+
+@media only screen and (max-width: 889px) {
+
+    .container {
+        flex-direction: column;
+        padding-top: 10vh;
+    }
+
+    .info {
+        margin-bottom: 48px;
+    }
+
+    .email {
+        margin-left: 0;
+    }
+
+    #submit {
+        width: inherit;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    main .container {
+        height: initial;
+    }
+
+}
