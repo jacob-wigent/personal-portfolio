@@ -20,42 +20,14 @@
     <meta property="og:image" content="/Assets/coverImage.png">
 
     <link rel="stylesheet" href="Styles/main.css">
-    <link rel="stylesheet" href="Styles/contact.css">
+    <link rel="stylesheet" href="Styles/404.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <link rel="icon" type="image/svg+xml" href="/Assets/favicon.svg">
     <link rel="icon" type="image/png" href="/Assets/favicon.png">
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init('i3a6bp-IBDwgsccz-');
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                        document.getElementById("submit").disabled = true;
-                        document.getElementById("confirmation").classList.add('active');
-                        document.getElementById('contact-form').reset();
-
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
-
-    <title>Jacob Wigent - Contact</title>
+    <title>Page not Found!</title>
 </head>
 <body>
     <nav class="navbar">
@@ -83,31 +55,19 @@
     <main>
         <div class="container">
             <div class="info">
-                <h1>Let's<br>Talk.</h1>
+                <h1>Uh Oh!</h1>
+                <h2>We can't find the page you're looking for.</h2>
                 <hr>
-                <p>Want to talk to me?</p>
-                <div class="email">
-                    <a href=""><div class="circle">
-                        <img src="Assets/Icons/Mail.svg">
-                    </div></a>
-                    <div class="text">
-                        <p>Email me at<br><a href="mailto:jacob@jacobwigent.com">jacob@jacobwigent.com</a></p>
-                    </div>
+                <p>But don't worry!  You can return to the <a href="/" style="font-size: 1rem;">home page</a> or check  out some of the pages below:</p>
+                <div class="links">
+                    <a href="">Web Development</a>
+                    <a href="">Engineering</a>
+                    <a href="">Game Development</a>
+                    <a href="">Volunteer Work</a>
                 </div>
             </div>
-            <div class="form">
-                <h3>Send a message<img style="width: 24px; position: relative; left: 10px; top: 2px;" src="Assets/Icons/plane.png"></h3>
-                <form id="contact-form">
-                    <input type="hidden" name="contact_number">
-                    <input name="name" type="text" placeholder="Full name*" required>
-                    <input name="email" type="email" placeholder="Email address*" required>
-                    <input name="subject" type="text" placeholder="Subject*" required>
-                    <label>Message:</label>
-                    <textarea name="message" required></textarea>
-                    <input type="submit" value="Send Message" id="submit">
-                    <p id="confirmation">Your message has been sent!</p>
-                </form>
-            </div>
+            <img src="Assets/404text.png" alt="404">
+        </div>
         </div>
     </main>
     <footer>

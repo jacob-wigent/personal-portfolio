@@ -1,0 +1,50 @@
+main hr {
+    width: 100px;
+    border-color: var(--primary--accent);
+    border-width: 3px;
+    border-style: solid;
+    margin-top: 24px;
+    margin-bottom: 36px;
+}
+
+.background-circle {
+    position: absolute;
+    height: 74vh;
+    top: 60%;
+    transform: translate(-40%, -60%);
+}
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+main .container {
+    height: calc(100vh - 86px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container > * {
+    width: 50%;
+}
+
+.links a {
+    font-size: 1.05rem;
+    margin-bottom: 12px;
+    font-weight: 500;
+    color: var(--secondary--accent);
+    margin-right: 8px;
+}
+
+.info h2 {
+    max-width: 600px;
+    font-size: 32px;
+}
+
+.info p {
+    max-width: 400px;
+    margin-bottom: 22px;
+    font-size: 1.05rem;
+}

@@ -309,6 +309,7 @@ footer .socials img {
 footer .socials {
     display: flex;
     gap: 26px;
+    justify-content: flex-end;
 }
 
 footer hr {
