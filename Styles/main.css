@@ -426,6 +426,7 @@ footer #copyright {
 
     footer .socials {
         margin: auto;
+        justify-content: center;
     }
 
     footer #copyright {

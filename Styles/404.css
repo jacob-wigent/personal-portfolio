@@ -48,3 +48,23 @@ main .container {
     margin-bottom: 22px;
     font-size: 1.05rem;
 }
+
+
+@media only screen and (max-width: 889px) {
+
+    main .container {
+        flex-direction: column-reverse;
+    }
+
+    .container > * {
+        width: 100%;
+        height: inherit;
+    }
+
+    .container img {
+        width: 100%;
+        height: auto;
+        margin: 46px 0;
+    }
+
+}
