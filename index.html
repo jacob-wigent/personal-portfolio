@@ -4,260 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-    <meta name="description" content="Developer with 4+ years of experience in C# programming and web development. Arduino and electronics hobbyist, leveraging a blend of software and hardware to build interactive projects.">
+    <meta name="description" content="">
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@Jacob_Wigent_" />
     <meta name="twitter:title" content="Jacob Wigent" />
-    <meta name="twitter:description" content="Game Designer, Web Developer, and Arduino & Electronics Hobbyist" />
-    <meta name="twitter:image" content="Assets\coverImage.png" />
 
     <meta property="og:title" content="Jacob Wigent">
     <meta property="og:site_name" content="Jacob Wigent">
     <meta property="og:url" content="https://jacobwigent.com/">
-    <meta property="og:description" content="Game Designer, Web Developer, and Arduino & Electronics Hobbyist">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="/Assets/coverImage.png">
 
-    <link rel="stylesheet" href="Styles/main.css">
-    <link rel="stylesheet" href="Styles/landing.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="/Styles/main.css">
 
     <link rel="icon" type="image/svg+xml" href="/Assets/favicon.svg">
     <link rel="icon" type="image/png" href="/Assets/favicon.png">
 
-    <title>Jacob Wigent - Developer</title>
+    <title>Jacob Wigent</title>
 </head>
 <body>
     <nav class="navbar">
         <a href="/"><img class="logo" src="Assets/Logo.svg" alt="JW Logo"></a>
         <ul class="nav-links">
             <li><a href="/">Home</a></li>
-            <li><a href="/portfolio">Portfolio</a></li>
-            <li><a href="/about">About</a></li>
             <li><a href="/contact">Contact</a></li>
         </ul>
         <ul class="nav-buttons">
             <a href="https://www.linkedin.com/in/jacob-wigent/" target="_blank"><img src="Assets/Icons/Dark-LinkedIn.svg" alt="LinkedIn Logo"></a>
             <a href="https://github.com/jacob-wigent" target="_blank"><img src="Assets/Icons/Dark-Github.svg" alt="GitHub Logo"></a>
-            <div class="hamburger menu" onclick="navSlide()"><div></div><div></div><div></div></div>
-            <div class="hamburger socials" onclick="socialOpen()"><div></div><div></div><div></div></div>
         </ul>
-        <div class="socials-bar">
-            <a href="https://www.linkedin.com/in/jacob-wigent/" target="_blank"><img src="Assets/Icons/LinkedInLight.svg" alt="LinkedIn"></a>
-            <a href="https://www.youtube.com/channel/UCAYNmNpyCUFQOGz35It_Wzg" target="_blank"><img src="Assets/Icons/YouTubeLight.svg" alt="Youtube"></a>
-            <a href="https://github.com/jacob-wigent" target="_blank"><img src="Assets/Icons/GithubLight.svg" alt="GitHub"></a>
-            <a href="https://www.reddit.com/user/Jacoooob_" target="_blank"><img src="Assets/Icons/RedditLight.svg" alt="Reddit"></a>
-        </div>
     </nav>
-    <section class="hero">
-        <img class="circle" src="Assets/HeroBackgroundCircle.svg">
-        <img class="portrait" src="Assets/HeroPortrait.png" alt="Jacob Wigent Portrait">
-        <div class="left">
-            <div class="text">
-                <h3>Aspiring Technologist</h3>
-                <p>Junior at the North Carolina School of Science and Mathematics, dedicated to the integration of electrical engineering and computer science. Always eager to learn and explore topics in computer science, physics, and engineering.</p>    
-                <a class="cta-link" href="">About Me <span class="material-symbols-outlined">arrow_forward</span></a>
-                <div class="social-buttons">
-                    <a href="https://www.linkedin.com/in/jacob-wigent/" target="_blank"><div class="social-button">
-                        <img src="Assets/Icons/LinkedIn.svg" alt="LinkedIn Logo">
-                    </div></a>
-                    <a href="https://github.com/jacob-wigent" target="_blank"><div class="social-button">
-                        <img src="Assets/Icons/Github.svg" alt="LinkedIn Logo">
-                    </div></a>
-                    <a href="https://www.youtube.com/channel/UCAYNmNpyCUFQOGz35It_Wzg" target="_blank"><div class="social-button">
-                        <img src="Assets/Icons/YouTube.svg" alt="LinkedIn Logo">
-                    </div></a>
-                </div>
-            </div>
-        </div>
-        <div class="right">
-            <div class="text">
-                <!-- <h4 class="multi-text">Game Designer</h4> -->
-                <h4 class="multi-text">Game Designer</h4>
-                <h1>Jacob Wigent</h1>
-                <hr>
-                <p>Developer with 4+ years of experience in C# programming and web development. Arduino and electronics hobbyist, leveraging a blend of software and hardware to build interactive projects.</p>    
-            </div>
-        </div>
-    </section>
-    <div class="bar">
-        <div class="badge">
-            <img src="Assets/Icons/timeforscience.png" alt="A Time for Science Logo">
-        </div>
-        <div class="badge">
-            <img src="Assets/Icons/lairdframe.png" alt="A Time for Science Logo">
-        </div>
-        <div class="badge">
-            <img src="Assets/Icons/explore.png" alt="A Time for Science Logo">
-        </div>
-    </div>
-    <section class="specialties">
-        <div class="title">
-            <h2>Specialties</h2>
-            <p>Crafting digital experiences that merge creativity with technology.</p>
-        </div>
-        <div class="items">
-            <div class="specialty">
-                <img src="Assets/Icons/coding 1.png" alt="Computer Coding">
-                <h3>Web Development</h3>
-                <p>As a skilled web developer with 5 years of experience in web design and front-end development, I craft interactive and visually appealing websites using HTML, CSS, and JavaScript. My passion lies in creating seamless online experiences that captivate and engage users.</p>
-                <a class="cta-link" href="">Web Dev Projects <span class="material-symbols-outlined">arrow_forward</span></a>
-            </div>
-            <div class="specialty">
-                <img src="Assets/Icons/microcontroller.png" alt="microcontroller">
-                <h3>Arduino Microcontrollers</h3>
-                <p>With a background in Arduino programming, I leverage the power of microcontrollers to bring innovative ideas to life. From automation to IoT projects, I enjoy pushing the boundaries of what's possible with electronics and code.</p>
-                <a class="cta-link" href="">Engineering Projects <span class="material-symbols-outlined">arrow_forward</span></a>
-            </div>
-            <div class="specialty">
-                <img src="Assets/Icons/game-development.png" alt="Code and console controller">
-                <h3>Game Development</h3>
-                <p>Game development is where my creativity meets technology. I have a passion for designing and developing games that entertain and challenge players. From concept to coding, I strive to create immersive gaming experiences.</p>
-                <a class="cta-link" href="">Game Dev Projects <span class="material-symbols-outlined">arrow_forward</span></a>
-            </div>
-        </div>
-    </section>
-    <section class="skills">
-        <div class="skills-box">
-            <h2>Skills</h2>
-            <hr>
-            <p>Languages:</p>
-            <div class="skills-list">
-                <div class="skill" style="--degrees: 285deg">
-                    <img src="Assets/Icons/CSharp.png" alt="C# Logo">
-                    <div class="info">
-                        <h5>C#</h5>
-                    </div>
-                </div>
-                <div class="skill" style="--degrees: 314deg">
-                    <img src="Assets/Icons/HTML.png" alt="HTML Logo">
-                    <div class="info">
-                        <h5>HTML</h5>
-                    </div>
-                </div>
-                <div class="skill" style="--degrees: 286deg">
-                    <img src="Assets/Icons/CSS.png" alt="CSS Logo">
-                    <div class="info">
-                        <h5>CSS</h5>
-                    </div>
-                </div>
-                <div class="skill" style="--degrees: 224deg">
-                    <img src="Assets/Icons/Python.png" alt="Python Logo">
-                    <div class="info">
-                        <h5>Python</h5>
-                    </div>
-                </div>
-                <div class="skill" style="--degrees: 164deg">
-                    <img src="Assets/Icons/Arduino.png" alt="Arduino Logo">
-                    <div class="info">
-                        <h5>Arduino</h5>
-                    </div>
-                </div>
-                <div class="skill" style="--degrees: 172deg">
-                    <img src="Assets/Icons/Javascript.png" alt="JavaScript Logo">
-                    <div class="info">
-                        <h5>JavaScript</h5>
-                    </div>
-                </div>
-            </div>
-            <p>Tools:</p>
-            <div class="skills-list">
-                <div class="skill" style="--degrees: 286deg">
-                    <img src="Assets/Icons/Unity.png" alt="Unity Logo">
-                    <div class="info">
-                        <h5>Unity</h5>
-                    </div>
-                </div>
-                <div class="skill" style="--degrees: 212deg">
-                    <img src="Assets/Icons/ArduinoIDE.png" alt="ArduinoIDE Logo">
-                    <div class="info">
-                        <h5>Arduino<br>IDE</h5>
-                    </div>
-                </div>
-                <div class="skill" style="--degrees: 200deg">
-                    <img src="Assets/Icons/Fusion360.png" alt="Fusion360 Logo">
-                    <div class="info">
-                        <h5>Fusion<br>360</h5>
-                    </div>
-                </div>
-                <div class="skill" style="--degrees: 196deg">
-                    <img src="Assets/Icons/Git.png" alt="Git Logo">
-                    <div class="info">
-                        <h5>Git</h5>
-                    </div>
-                </div>
-                <div class="skill" style="--degrees: 184deg">
-                    <img src="Assets/Icons/Davinci Resove.png" alt="Davinci Resove Logo">
-                    <div class="info">
-                        <h5>Davinci<br>Resove</h5>
-                    </div>
-                </div>
-                <div class="skill-filler"></div>
-            </div>
-        </div>
-    </section>
-    <section class="education">
-        <div class="title">
-            <h2>Education</h2>
-            <p>Committed to excellence in academics, my educational journey reflects my dedication to continuous learning and growth.</p>
-        </div>
-        <div class="timeline-container">
-            <div class="education-item">
-                <img class="point-line" src="Assets/Timeline/PointLine.svg">
-                <img class="icon" src="Assets/Icons/PCSECHS.png" alt="Pitt County Schools Early College Logo" onclick="selectEducation(0)">
-                <a href="https://www.pitt.k12.nc.us/echs" target="_blank"><div class="details">
-                    <p class="heading">
-                        Pitt County Schools Early College High School
-                    </p>
-                    <p class="description">
-                        Early college high school program where I advanced in high school coursework and took college-level courses.
-                    </p></a>
-                </div>
-            </div>
-            <div class="education-item">
-                <img class="point-line" src="Assets/Timeline/PointLine.svg">
-                <img class="icon" src="Assets/Icons/Pitt.png" alt="Pitt Community College Logo" onclick="selectEducation(1)">
-                <a href="https://pittcc.edu/" target="_blank"><div class="details">
-                    <p class="heading">
-                        Pitt Community College (Dual Enrolled)
-                    </p>
-                    <p class="description">
-                        Community college where I took college-level classes while at PCSECHS.
-                    </p>
-                </div></a>
-            </div>
-            <div class="education-item">
-                <img class="point-line" src="Assets/Timeline/PointLine.svg">
-                <img class="icon" src="Assets/Icons/NCSSM.png" alt="North Carolina School of Science and Mathematics Logo" onclick="selectEducation(2)">
-                <a href="https://ncssm.edu/" target="_blank"><div class="details">
-                    <p class="heading">
-                        North Carolina School of Science and Mathematics
-                    </p>
-                    <p class="description">
-                        A challenging residential program for North Carolina's most talented STEM students.
-                    </p>
-                </div></a>
-            </div>
-        </div>
-        <img class='timeline' src="Assets/Timeline/Timeline.svg">
-    </section>
+    <main style="text-align: center; padding: 20vh 0;">
+        <h1>Jacob Wigent</h1>
+        <h4>Game Designer, Web Developer, and Electrical Engineer.</h4>
+    </main>
     <footer>
         <div class="container">
             <div class="left">
                 <img src="Assets/LogoLight.svg" alt="JW Logo" class="logo">
                 <ul class="main-links">
                     <li><a href="/">Home</a></li>
-                    <li><a href="/portfolio">Portfolio</a></li>
-                    <li><a href="/about">About</a></li>
                     <li><a href="/contact">Contact</a></li>
-                </ul>
-                <ul class="sub-links">
-                    <li><a href="">Web Development</a></li>
-                    <li><a href="">Engineering</a></li>
-                    <li><a href="">Game Development</a></li>
-                    <li><a href="">Volunteer Work</a></li>
                 </ul>
             </div>
             <div class="right">
@@ -265,15 +54,11 @@
                     <a href="https://www.linkedin.com/in/jacob-wigent/" target="_blank"><img src="Assets/Icons/LinkedInLight.svg" alt="LinkedIn"></a>
                     <a href="https://www.youtube.com/channel/UCAYNmNpyCUFQOGz35It_Wzg" target="_blank"><img src="Assets/Icons/YouTubeLight.svg" alt="Youtube"></a>
                     <a href="https://github.com/jacob-wigent" target="_blank"><img src="Assets/Icons/GithubLight.svg" alt="GitHub"></a>
-                    <a href="https://www.reddit.com/user/Jacoooob_" target="_blank"><img src="Assets/Icons/RedditLight.svg" alt="Reddit"></a>
                 </div>
             </div>
         </div>
         <hr>
         <p id="copyright">©2023 Jacob Wigent, All Rights Reserved.</p>
     </footer>
-
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>
